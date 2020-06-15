@@ -3,7 +3,7 @@
 # Pull base image.
 FROM nvidia/cuda:9.2-cudnn7-devel
 
-LABEL maintainer Aaron "aaronwlj@foxmail.com"
+LABEL maintainer anngao "gaocui2253@dingtalk.com"
 
 # Install dependencies
 RUN apt-get -y update && \
