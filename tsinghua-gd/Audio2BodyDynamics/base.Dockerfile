@@ -4,7 +4,7 @@
 FROM nvidia/cuda:9.2-cudnn7-devel
 
 LABEL maintainer anngao "gaocui2253@dingtalk.com"
-RUN pip3 install --upgrade pip
+
 
 # Install dependencies
 RUN apt-get -y update && \
@@ -44,7 +44,7 @@ RUN apt-get -y update && \
         vim
         
 # pip 升级
-# RUN python3 -m pip install --upgrade pip
+RUN python3 -m pip install --upgrade pip
         
 # 安装服务常用包
 RUN pip3 install -U setuptools \
