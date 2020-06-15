@@ -91,12 +91,12 @@ rm cmake-3.14.2-Linux-x86_64.tar.gz
 ENV PATH="/opt/cmake-3.14.2-Linux-x86_64/bin:${PATH}"
 
 # 安装 DLIB
-RUN cd /root/ && \
-    git clone https://github.com/davisking/dlib.git && \
-    #cd /root/dlib && \
-    python3 setup.py install && \
-    # cd .. && \
-    rm -r /root/dlib
+# RUN cd /root/ && \
+#     git clone https://github.com/davisking/dlib.git && \
+#     cd /root/dlib && \
+#     python3 setup.py install && \
+#     cd .. && \
+#     rm -r /root/dlib
 
 # 删除 apt lists
 RUN rm -rf /var/lib/apt/lists/*
