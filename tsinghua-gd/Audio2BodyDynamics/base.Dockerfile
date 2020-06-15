@@ -72,7 +72,8 @@ RUN pip3 --no-cache-dir install \
   torch==0.4.1 \
   torchvision==0.2.1 \
   opencv-python==3.4.3.18 \
-  librosa==0.7.1
+  librosa==0.7.1 \
+  llvmlite==0.31.0
 
 RUN python3 -m pip install --upgrade pip
 # 安装基础库
